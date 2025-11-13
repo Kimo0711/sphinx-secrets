@@ -20,7 +20,12 @@ const CitiesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {cities.map((city, index) => (
             <div key={index} className="slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
-              <CityCard name={city.name} description={city.description} />
+              <CityCard 
+                name={city.name} 
+                description={city.description}
+                image={city.image}
+                video={city.video}
+              />
             </div>
           ))}
         </div>
